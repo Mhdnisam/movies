@@ -1,0 +1,17 @@
+<html>
+<body>
+<h1><u>MOVIES</u></h1>
+<h2><u>welcome to our movie page</u></h2>
+{%for i in movies %}
+<h3>movie name:{{i.title}}</h3>
+<h4>year:{{i.year}}</h4>
+<h4>category:{{i.category}}</h4>
+{% if i.success %}
+<p>movie is worth to watch</p>
+{% else %}
+<p>its your choice to watch</p>
+{% endif %}
+{% endfor %}
+</body>
+</html>
+
